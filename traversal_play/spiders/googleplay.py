@@ -56,6 +56,10 @@ class GoogleplaySpider(Spider):
 	i['score'] = sel.xpath('//*[@class="score"]/text()').extract()
 	i['reviewsnum'] = sel.xpath('//*[@class="reviews-num"]/text()').extract()
 	i['star5num'] =  sel.xpath('//*[@class="rating-bar-container five"]/span[3]/text()').extract()
+	i['star4num'] =  sel.xpath('//*[@class="rating-bar-container four"]/span[3]/text()').extract()
+	i['star3num'] =  sel.xpath('//*[@class="rating-bar-container three"]/span[3]/text()').extract()
+	i['star2num'] =  sel.xpath('//*[@class="rating-bar-container two"]/span[3]/text()').extract()
+	i['star1num'] =  sel.xpath('//*[@class="rating-bar-container one"]/span[3]/text()').extract()
 
 	items.append(i)
 
