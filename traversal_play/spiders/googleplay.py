@@ -67,5 +67,5 @@ class GoogleplaySpider(Spider):
 	for a in items:
      	    print a	
 
-	#return items
+	return items
  

@@ -16,3 +16,8 @@ USER_AGENT = 'traversal_play (+http://www.yourdomain.com)'
 
 
 LOG_LEVEL = 'DEBUG'
+
+ITEM_PIPELINES = {
+        'traversal_play.pipelines.MysqlPipeline': 888,
+}
+
